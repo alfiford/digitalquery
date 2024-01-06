@@ -64,7 +64,7 @@ const userCard = (user) => {
 <h2>${id}</h2>${info}<ul> 
 <li>${user.followers} <strong>Followers</strong></li> 
 <li>${user.following} <strong>Following</strong></li> 
-<li>${user.public_repos} <strong>Repos</strong></li> 
+<li>${user.public_repos} <strong>Repos</strong></li>
 </ul> 
 <div id="repos"></div> 
 </div> 
@@ -100,5 +100,13 @@ inputForm.addEventListener("submit", (e) => {
     if (user) {
         userGetFunction(user);
         inputBox.value = "";
+    }
+});
+// 
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 250) {
+        $('.sticky-top').addClass('sticky-nav').css('top', '0px');
+    } else {
+        $('.sticky-top').removeClass('sticky-nav').css('top', '-100px');
     }
 });
