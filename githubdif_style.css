@@ -1,0 +1,178 @@
+/* Main Start */
+body {
+    font-family: 'Poppins', 'Courier New', Courier, monospace;
+    background: #d6dce0;
+    height: 100vh;
+}
+
+/* Main End */
+/* NavBar Start */
+nav {
+    font-family: 'Poppins', 'Courier New', Courier, monospace;
+    border: 1px groove green;
+    position: fixed;
+
+}
+
+.bg-light {
+    background-color: #f0f0f0 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    margin-right: 30px;
+    padding: 25px 0;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: blue;
+    opacity: 0.5;
+    font-weight: bold;
+    text-decoration: overline;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-light .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+.navbar-light .navbar-brand,
+.navbar-light a.btn {
+    height: 75px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-weight: 500;
+}
+
+.navbar-light.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+/* NavBar End */
+/*Footer Start*/
+.footer {
+    background-color: black;
+    color: #fefefe;
+    margin-top: 100px;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+}
+
+.footer .heading {
+    color: #fefefe;
+    max-width: 1010px;
+    width: 90%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+}
+
+.footer .content p {
+    margin-bottom: 1.3rem;
+}
+
+.footer .content a {
+    text-decoration: none;
+    color: #fefefe;
+}
+
+.footer .content a:hover {
+    border-bottom: 1px solid #971717;
+}
+
+.footer .content h4 {
+    margin-bottom: 1.3rem;
+    font-size: 19px;
+}
+
+footer {
+    text-align: center;
+    /* margin-bottom: 2rem; */
+}
+
+footer hr {
+    margin: 2rem 0;
+}
+
+@media (max-width: 767px) {
+    .footer .content {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    .footer {
+        position: unset;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .footer .content,
+    .footer {
+        font-size: 14px;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+    .footer {
+        position: unset;
+    }
+}
+
+/*Footer End*/
+/* HelpBox Start*/
+#ahelpbox{
+    margin-left: 7px;
+    margin-right: 7px;
+}
+details{
+    font-size: x-large;
+}
+h6{
+    word-spacing: 5px;
+    line-height: 25px;
+}
+/* HelpBox End */
