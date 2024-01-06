@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+body {
+    background: #d6dce0;
+}
+
 form {
     margin: auto;
     max-width: 50%;
@@ -14,12 +18,13 @@ form {
 }
 
 h1 {
-    color: #00a136;
+    color: #f80c8e;
     font-size: 2.5rem;
     margin: auto;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
+    font-style: oblique;
 }
 
 h1:hover {
@@ -39,6 +44,25 @@ h1:hover {
     padding: 10px;
 }
 
+/* Lookup Button Start */
+
+#submit1 {
+    width: 25%;
+    border: 2px groove #191a19;
+}
+
+#submit1:hover {
+    background-color: #002f61;
+    color: wheat;
+}
+
+#submit1:focus {
+    background-color: #697c8f;
+    border: 2px groove #ffffff;
+    color: black;
+}
+
+/* Lookup Button End */
 .inputForm input::placeholder {
     color: #666;
     font-weight: bold;
@@ -52,9 +76,7 @@ h1:hover {
 
 .card {
     max-width: 50%;
-    background-color: rgb(141,
-            240,
-            243);
+    background-color: rgb(19, 33, 34);
     border-radius: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -64,7 +86,7 @@ h1:hover {
 
 .avatar {
     border-radius: 50%;
-    border: 4px solid #00a136;
+    border: 3px groove #a10000;
     height: 150px;
     width: 150px;
     transition: transform 0.3s ease-in-out;
@@ -75,7 +97,8 @@ h1:hover {
 }
 
 .user-info {
-    color: #333;
+    color: #356e67;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left: 2rem;
     padding: 1rem;
     background-color: rgba(255,
@@ -89,7 +112,7 @@ h1:hover {
 .user-info h2 {
     margin-top: 0;
     font-size: 1.5rem;
-    color: #007bff;
+    color: #000000;
 }
 
 .user-info p {
@@ -122,6 +145,7 @@ h1:hover {
     color: #fff;
     background-color: #ff1500;
     font-size: 0.9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0.4rem 0.8rem;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
@@ -134,6 +158,7 @@ h1:hover {
 .repo:hover {
     background-color: #cc0c00;
     transform: scale(1.05);
+    color: #191a19
 }
 
 @media (max-width: 500px) {
@@ -144,5 +169,161 @@ h1:hover {
 
     .inputForm {
         max-width: 400px;
+    }
+}
+
+/* NavBar Start */
+nav {
+    font-family: 'Poppins', 'Courier New', Courier, monospace;
+    border: 1px groove green;
+    position: fixed;
+
+}
+
+.bg-light {
+    background-color: #f0f0f0 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    margin-right: 30px;
+    padding: 25px 0;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: blue;
+    opacity: 0.5;
+    font-weight: bold;
+    text-decoration: overline;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-light .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+.navbar-light .navbar-brand,
+.navbar-light a.btn {
+    height: 75px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-weight: 500;
+}
+
+.navbar-light.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+/* NavBar End */
+/*footer*/
+.footer {
+    background-color: black;
+    color: #fefefe;
+    margin-top: 500px;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+}
+
+.footer .heading {
+    color: #fefefe;
+    max-width: 1010px;
+    width: 90%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+}
+
+.footer .content p {
+    margin-bottom: 1.3rem;
+}
+
+.footer .content a {
+    text-decoration: none;
+    color: #fefefe;
+}
+
+.footer .content a:hover {
+    border-bottom: 1px solid #971717;
+}
+
+.footer .content h4 {
+    margin-bottom: 1.3rem;
+    font-size: 19px;
+}
+
+footer {
+    text-align: center;
+    /* margin-bottom: 2rem; */
+}
+
+footer hr {
+    margin: 2rem 0;
+}
+
+@media (max-width: 767px) {
+    .footer .content {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    .footer {
+        position: unset;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .footer .content,
+    .footer {
+        font-size: 14px;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+    .footer {
+        position: unset;
     }
 }
