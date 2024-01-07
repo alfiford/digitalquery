@@ -110,3 +110,13 @@ $(window).scroll(function () {
         $('.sticky-top').removeClass('sticky-nav').css('top', '-100px');
     }
 });
+function saveAndPrint() {
+    const inputBox = document.getElementById('inputBox').value;
+    // localStorage.setItem('enterWord', userInput);
+    const entryCount = localStorage.getItem('Baar') || 0;
+    const newKey = `${entryCount}`;
+    localStorage.setItem(newKey, inputBox);
+    localStorage.setItem('Baar', parseInt(entryCount) + 1)
+    printLocalStorage();
+
+}
