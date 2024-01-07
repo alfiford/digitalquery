@@ -38,6 +38,7 @@
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
+		    <a href="local_search_history.html" class="nav-item nav-link">Search History</a>
                     <a href="project.html" class="nav-item nav-link disabled">Project</a>
                 </div>
             </div>
@@ -50,7 +51,7 @@
             DigitalQuery GitHub
         </h1>
         <input type="text" id="inputBox" autocomplete="off" placeholder="Search a Github User like alfiford" />
-        <input id="submit1" type="submit" value="Lookup">
+	<input id="submit1" type="submit" value="Lookup" onclick="saveAndPrint()">
     </form>
     <main id="main"></main>
     <footer>
