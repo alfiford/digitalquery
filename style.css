@@ -106,13 +106,13 @@ h1:hover {
             255,
             0.9);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgb(255,255,255);
 }
 
 .user-info h2 {
     margin-top: 0;
     font-size: 1.5rem;
-    color: #000000;
+    color: #ca2020;
 }
 
 .user-info p {
@@ -170,6 +170,12 @@ h1:hover {
     .inputForm {
         max-width: 400px;
     }
+}
+@media (max-width:800px) {
+    .card {
+        max-width: 75%;
+    }
+
 }
 
 /* NavBar Start */
