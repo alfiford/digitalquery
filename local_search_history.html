@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="DigitalQueryGitHub_ico.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="local_search_history_style.css" rel="stylesheet">
+    <title>Local Hitory: DigitalQuery-GitHub</title>
+</head>
+
+<body>
+    <!--  -->
+    <header>
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary"> <img src="DigitalQuery -GitHub-logos_black.png" width="100px">
+            </a></h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="local_search_history.html" class="nav-item nav-link">Search History</a>
+                    <a href="project.html" class="nav-item nav-link disabled">Project</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+    </header>
+    <!-- Main Start -->
+    <main>
+        <div id="bodybox">
+            <h2 id="heading">Local Search History</h2>
+            <br>
+            <hr>
+            <div id="localhistory">
+            </div>
+            <div id="noData"></div>
+            <hr>
+            <button id="remove" value="reomve" name="remove" onclick="removeHistory()" onmouseover="informto()">Remove</button>
+            <div id="information"></div>
+        </div>
+    </main>
+    <!-- Main End -->
+    <!-- Footer Start -->
+    <footer>
+        <div class="footer">
+            <div class="heading">
+                <h2>DigitalQuery -GitHub<sup>™</sup></h2>
+            </div>
+            <div class="content">
+                <div class="social-media">
+                    <h4>Social</h4>
+                    <p>
+                        <a
+                            href="https://www.linkedin.com/in/%E0%A4%AA%E0%A5%81%E0%A4%B7%E0%A5%8D%E0%A4%95%E0%A4%B0-%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%B5%E0%A4%BE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%B5-4997a52a8/"><i
+                                class="fab fa-linkedin"></i> Linkedin</a>
+                    </p>
+
+                    <p>
+                        <a href="https://github.com/alfiford"><i class="fab fa-github"></i> Github</a>
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/profile.php?id=61555384735659"><i class="fab fa-facebook"></i>
+                            Facebook</a>
+                    </p>
+                    <p>
+                        <a href="https://www.instagram.com/alfiford"><i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </p>
+                </div>
+                <div class="links">
+                    <h4>Quick links</h4>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="about.html">About</a></p>
+                    <p><a href="privacy_policy.html">Privacy Statement</a></p>
+                    <p><a href="term_condition.html">Terms & conditions of sales & service</a></p>
+                </div>
+                <div class="details">
+                    <h4 class="address"><a href="githubdif.html">What is Github ?</a></h4>
+                    <p>
+                        GitHub is a web-based platform that provides <br>hosting for version control using Git.
+                    </p>
+                    <h4 class="mail">Email</h4>
+                    <p><a href="">privategafbusiness@gmail.com</a></p>
+                </div>
+            </div>
+            <footer>
+                <hr />
+                © 2024-25 alfiford.digitalquery-github.
+            </footer>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="local_storage_history_logic.js"></script>
+    <!--  -->
+
+</body>
+
+</html>
